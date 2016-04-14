@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5 300: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+      
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+      <header>
+          <!-- the "banner" area or title of the page-->
+          <h1>HTML5 300: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+      </header>
+      <nav class="nav1"> 
+          <ul>
+              <!-- these links are relative paths -->
+              <li> <a href="#">Home</a></li>
+              <li> <a href="#">HTML5</a></li>
+              <li> <a href="sign-up.html">CSS</a></li>
+              <li> <a href="#">Bootstrap</a></li>
+              <li> <a href="http://www.google.com">Google</a></li>
+          </ul>
+      </nav>
+      <div id="mainContent">
+        <h2>Registration Form</h3>
+          <!-- A Simple Form    -->
+          <p>If you would like to register, please complete the following form. Thank you!</p>
+        <form name="form1" method="post" action="#" autocomplete="on">
+          <fieldset>
+            <h2>Divide Students Into Two Groups - US and Other</h2>
+              <ul>
+                <li>
+                  <label id="age-label">Number of Participants:</label>
+                  <form oninput="result.value=parseInt(c.value)+parseInt(d.value)">
+                    <input type="number" name="c" value="i" required/> +
+                    <input type="number" name="d" value="x" /> =
+                    <output name="result"></output>
+                    <input type="reset" value="Reset Fields" name="reset"/>
+                  </form>
+                </li>
+                <li>
+                  <label id="yrs-of-exper">Years of Experience:</label>
+                  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" name="a" value="i" required/> +
+                    <input type="number" name="b" value="x" /> =
+                    <output name="result"></output>
+                    <input type="reset" value="Reset Fields" name="reset"/>
+                  </form>
+                </li> 
+                <!--<li>
+                  <label id="total">Total Years of Experience:</label>
+                  <input type="number" name="quantity" min="0" max="100" required>
+                </li> 
+                <li>
+                  <label id="average">Average Years of Experience:</label>
+                  <input type="number" name="quantity" min="0" max="30" required>
+                </li> 
+              </ul>
+                <input type="reset" value="Reset Form" name="reset"/>-->
+            
+  <script>
+  function myFunction() {
+    var x;
+
+    if (x === undefined) {
+        txt = "x is undefined";
+    } else {
+        txt = "x is defined";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+  </script>
+            
+          </fieldset>
+        </form> 
+      </div><!-- closing maincContent div tag -->
+
+      <!--  This is the footer section, only footer stuff -->
+    <footer>
+      <p>&copy; copyright 2016</p>
+    </footer>
+  </body>
+</html>
